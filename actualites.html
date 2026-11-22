@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actualités | SOKHIA</title>
+  <meta name="description" content="Suivez les annonces, publications, événements et initiatives de SOKHIA.">
+  <meta name="theme-color" content="#6420D0">
+  <link rel="icon" href="assets/logo/sokhia-logo.jpg">
+
+  <script>document.documentElement.className += ' js';</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/extras.css">
+</head>
+<body class="page-inner">
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="SOKHIA - Accueil">
+        <img src="assets/logo/sokhia-logo.jpg" alt="Logo SOKHIA" width="190" height="64">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="activites.html">Nos activités</a></li>
+          <li><a href="actualites.html" aria-current="page">Actualités</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ===== EN-TÊTE DE PAGE ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Accueil</a> › Actualités</p>
+        <h1>Actualités</h1>
+        <p>Annonces, publications, événements et initiatives : suivez la vie de SOKHIA.</p>
+      </div>
+    </section>
+
+    <!-- ===== LISTE DES ACTUALITÉS ===== -->
+    <section class="section">
+      <div class="container">
+        <!-- Filtres et cartes créés automatiquement depuis data/actualites.js -->
+        <div class="filters" id="newsFilters" role="group" aria-label="Filtrer par catégorie"></div>
+        <div class="cards-3" id="newsGrid">
+          <noscript><p>Activez JavaScript pour voir les actualités.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARTENAIRES ===== -->
+    <section class="partners" aria-label="Nos partenaires">
+      <div class="container"><h2>Nos partenaires</h2></div>
+      <div class="partners-viewport">
+        <ul class="partners-track" id="partnersTrack">
+          <li><img src="assets/partenaires/partenaire-1.png" alt="Nom du partenaire 1" onerror="this.closest('li').remove()"></li>
+          <li><img src="assets/partenaires/partenaire-2.png" alt="Nom du partenaire 2" onerror="this.closest('li').remove()"></li>
+          <li><img src="assets/partenaires/partenaire-3.png" alt="Nom du partenaire 3" onerror="this.closest('li').remove()"></li>
+          <li><img src="assets/partenaires/partenaire-4.png" alt="Nom du partenaire 4" onerror="this.closest('li').remove()"></li>
+          <li><img src="assets/partenaires/partenaire-5.png" alt="Nom du partenaire 5" onerror="this.closest('li').remove()"></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FENÊTRE DE DÉTAIL D'UNE ACTUALITÉ ===== -->
+  <div class="modal" id="newsModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Fermer">×</button>
+      <div class="modal-img" id="modalImg"></div>
+      <div class="modal-content">
+        <span class="feature-tag" id="modalCat"></span>
+        <p class="news-date" id="modalDate"></p>
+        <h2 id="modalTitle"></h2>
+        <p class="modal-text" id="modalText"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" aria-label="SOKHIA - Accueil">
+          <img src="assets/logo/sokhia-logo.jpg" alt="Logo SOKHIA" width="190" height="64" loading="lazy">
+        </a>
+        <p>Startup congolaise à impact social et technologique. Le bien-être numérique est notre premier domaine d'activité.</p>
+      </div>
+
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="activites.html">Nos activités</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>E-mail : <a href="mailto:sokhia.contact@gmail.com">sokhia.contact@gmail.com</a></li>
+          <li>Téléphone : <a href="tel:+242067301755">+242 06 730 17 55</a></li>
+          <li>Adresse : Pointe-Noire</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Réseaux sociaux</h3>
+        <div class="socials" data-socials></div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="signature">Le numérique au service de l'humain.</p>
+      <p>© <span id="year">2026</span> SOKHIA. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="data/actualites.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/extras.js"></script>
+</body>
+</html>
